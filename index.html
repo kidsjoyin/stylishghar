@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stylishghar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            font-family:'Times New Roman', Times, serif:
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .logo-container {
+            position: fixed; /* Keep the logo fixed at the top */
+            top: 0;
+            width: 100%;
+            background-color: #f0f0f0; /* Same background to prevent overlap */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 0;
+            z-index: 1000; /* Ensure the logo is above other elements */
+        }
+
+        .profile-picture {
+            width: 100px; /* Smaller size for mobile */
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .pb-name {
+            color: #333;
+            text-align: center;
+            font-weight: bold;
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        .pb-username {
+            color: #333;
+            text-align: center;
+            margin-top: 5px;
+            font-weight: normal;
+            font-size: 14px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 180px; /* Adjust margin-top to ensure space for the header */
+            padding: 0 20px;
+        }
+
+        .product-item {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr); /* Two products per row on tablets */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr); /* Two products per row on mobile */
+                gap: 10px; /* Adjust gap for smaller screens */
+            }
+
+            .profile-picture {
+                width: 80px; /* Smaller size for mobile */
+                height: 80px;
+            }
+
+            .pb-name {
+                font-size: 20px;
+            }
+
+            .pb-username {
+                font-size: 12px;
+            }
+
+            .product-item {
+                padding: 10px; /* Smaller padding for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="logo-container">
+            <a rel="noopener noreferrer" href="https://www.instagram.com/stylisghar?utm_source=qr&igsh=MXVhemhnbm5lbGxvaQ%3D%3D" target="_blank">
+                <img src="logo2.png" alt="stylishghar Profile Picture" class="profile-picture" loading="lazy">
+            </a>
+            <span class="pb-name">stylishghar</span>
+            <a rel="noopener noreferrer" class="pb-username" href="https://www.instagram.com/stylisghar?utm_source=qr&igsh=MXVhemhnbm5lbGxvaQ%3D%3D" target="_blank">@stylishghar</a>
+        </header>
+        <main class="product-grid">
+            <div class="product-item">
+                <a href="https://amzn.to/3x7p7L0" target="_blank">
+                    <img src="img.4.jpg" loading="lazy">
+                </a>
+            </div>
+            
+        </main>
+    </div>
+</body>
+</html>
